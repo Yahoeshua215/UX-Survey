@@ -9,11 +9,6 @@ const nextConfig = {
     config.externals = [...(config.externals || []), 'bufferutil', 'utf-8-validate'];
     return config;
   },
-  // Configure hostname and port through environment variables
-  env: {
-    HOSTNAME: process.env.HOSTNAME || '0.0.0.0',
-    PORT: String(process.env.PORT || 3000)
-  },
   images: {
     remotePatterns: [
       {
